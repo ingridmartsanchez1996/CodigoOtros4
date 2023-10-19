@@ -1,0 +1,62 @@
+Nombre: Ingrid Jeraldin Martínez Sánchez
+Revisó: José Manuel
+Calificación: 4/5 Competente
+
+///// CODIGO DE JAVA ////
+
+package com.generation;
+
+import java.util.Scanner;
+
+public class Codigo4 {
+	public static void main(String[] args) {
+        //Agregando scanner en lugar de 's' e importando java.util.Scanner
+		Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
+        String j1 = scanner.nextLine();
+        
+        System.out.print("Turno del jugador 2 (introduzca piedra, papel o tijeras): ");
+        //Remover esta linea Scanner s2 = new Scanner();
+        String j2 = scanner.nextLine();
+        
+        //Eliminando doble parentesis al final de j2
+        if (j1.equals(j2)) {
+          System.out.println("Empate");
+        } else {
+        //Cambiando 'g' por 'ganador' y asignando 0 por 2 a int ganador
+          int ganador = 2;
+          
+          //cambiando == por equals
+          switch(j1) {
+            case "piedra":
+              if (j2.equals("tijeras")) {
+                ganador = 1;
+              }
+            //agregando break
+              break;
+              
+            case "papel":
+              if (j2.equals("piedra")) {
+                ganador = 1;
+              //agregando } y break
+              }
+              break;
+              //cambiando a "tijeras"
+            case "tijeras":
+              if (j2.equals("papel")) {
+            	//Cambiando 'g' por 'ganador'
+                ganador = 1;
+              }
+              break;
+            default:		
+          }
+          System.out.println("Gana el jugador " + ganador);
+          
+        }
+        //Cerrando el scanner
+        scanner.close();
+      
+    }
+
+}
