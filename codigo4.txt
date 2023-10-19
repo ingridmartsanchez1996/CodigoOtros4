@@ -1,6 +1,8 @@
 Nombre: Ingrid Jeraldin Martínez Sánchez
 Revisó: José Manuel
 Calificación: 4/5 Competente
+Buen entendimiento del código, comentó de buena manera el paso a paso de lo que hacía,
+quedó un error pequeño en código, pero lo pudo resolver.
 
 ///// CODIGO DE JAVA ////
 
